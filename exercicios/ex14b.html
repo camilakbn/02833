@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 14B - CN</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        main {
+            width: 650px;
+            margin: auto;
+        }
+
+        .formulario {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .linha {
+            display: flex;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .esq {
+            width: 90px;
+            padding: 5px;
+            border-right: 1px solid #ccc;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .dir {
+            flex: 1;
+            padding: 5px;
+            text-align: left;
+        }
+
+        .caixa {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Inscrição</h1>
+    </header>
+    <br>
+    <main>
+        <article>
+            <section>
+                <form class="formulario" action="mailto:camilakarinab@gmail.com">
+                    <div class="linha">
+                        <div class="esq">
+                            <label for="nome" class="campo">Nome:</label>
+                        </div>
+                        <div class="dir">
+                            <input class="caixa" type="text" name="nome" size="60" required maxlength="100"
+                                placeholder="Coloque o nome aqui">
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="esq">
+                            <label for="email" class="campo">Email:</label>
+                        </div>
+                        <div class="dir">
+                            <input class="caixa" type="email" name="email" size="40" required maxlength="40"
+                                placeholder="nome@dominio.pt">
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="esq">
+                            <label for="senha" class="campo">Senha:</label>
+                        </div>
+                        <div class="dir">
+                            <input class="caixa" type="password" name="senha" size="20" required maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="esq">
+                            <label for="senha" class="campo">Repita a senha:</label>
+                        </div>
+                        <div class="dir">
+                            <input class="caixa" type="password" name="senha" size="20" required maxlength="20">
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="esq">
+                            <label for="genero" class="campo">Gênero:</label>
+                        </div>
+                        <div class="dir">
+                            <input type="radio" name="genero" value="feminino">Feminino<br>
+                            <input type="radio" name="genero" value="masculino">Masculino<br>
+                            <input type="radio" name="genero" value="indeterminado">Indeterminado<br>
+                            <input type="radio" name="naoResponde" value="naoResponde">Prefiro não responder<br>
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="esq">
+                            <label for="morada" class="campo">Morada:</label>
+                        </div>
+                        <div class="dir">
+                            <input class="caixa" type="text" name="morada" size="60" maxlength="100"
+                                placeholder="Coloque a morada aqui">
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="esq"><label for="codPostal" class="campo">Cód. Postal:</label></div>
+                        <div class="dir">
+                            <input class="caixa" type="text" name="codPostal" size="30" maxlength="50"
+                                placeholder="Coloque o código postal aqui">
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="esq">
+                            <label for="interesses" class="campo">Interesses:</label>
+                        </div>
+                        <div class="dir">
+                            <input type="checkbox" name="programacao" value="1">Programação<br>
+                            <input type="checkbox" name="webdesign" value="2">Webdesign<br>
+                            <input type="checkbox" name="imagem" value="2">Imagem<br>
+                            <input type="checkbox" name="video" value="2">Vídeo<br>
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="esq">
+                            <label for="tipo" class="campo"> Tipo:</label>
+                        </div>
+                        <div class="dir">
+                            <select name="tipo">
+                                <option value="formando">Formando</option>
+                                <option value="formador">Formador</option>
+                                <option value="coordenador">Coordenador</option>
+                                <option value="mediador">Mediador</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="esq">
+                            <label for="sobre" class="campo">Sobre:</label>
+                        </div>
+                        <div class="dir">
+                            <textarea name="sobre" cols="80" rows="4" maxlength="90"></textarea>
+                        </div>
+                    </div>
+
+                    <input type="submit" class="button" value="OK">
+                    <input type="reset" class="button" value="Limpar">
+                    <input type="button" class="button" value="Ciador" onclick="javascript:alert('Camila Nascimento')">
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>2026 Demi Forms. Todos os direitos reservados CN @ IEFP VN Gaia</p>
+    </footer>
+</body>
+
+</html>

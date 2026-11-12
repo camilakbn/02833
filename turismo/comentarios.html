@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo em Portugal - CN</title>
+    <link rel="stylesheet" type="text/css" href="turismo.css">
+    </style>
+</head>
+
+<body>
+    <!-- Links de Navegação -->
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html" target="_self">Início</a></li>
+            <li><a href="norte.html" target="_self">Norte</a></li>
+            <li><a href="centro.html" target="_self">Centro</a></li>
+            <li><a href="sul.html" target="_self">Sul</a></li>
+            <li><a href="comentarios.html" class="active" target="_self">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Cabeçalho do Site -->
+    <header>
+        <h1>Visite os lugares mais lindos de Portugal</h1>
+        <h2>Descubra as paisagens, a cultura e a gastronomia de Portugal</h2>
+        <br>
+        <nav id="regioes">
+            <h3>
+                <ul>
+                    <li><a href="norte.html" target="_self">Região Norte</a></li>
+                    <li><a href="centro.html" target="_self">Região Centro</a></li>
+                    <li><a href="sul.html" target="_self">Região Sul</a></li>
+                </ul>
+            </h3>
+        </nav>
+    </header>
+    <br>
+    <!-- Área de Conteúdo Principal -->
+    <main>
+        <article>
+            <h2>Deixe os seus comentários</h2>
+            <section>
+                <form action="mailto:camilakarinab@gmail.com">
+                    <label for="nome">Nome:
+                        <input type="text" name="nome" size="60" required maxlenght="100"
+                            placeholder="Coloque o nome aqui">
+                    </label><br><br>
+                    <label for="email">Email:
+                        <input type="email" name="email" size="40" required maxlenght="40"
+                            placeholder="nome@dominio.pt">
+                    </label><br><br>
+                    <label for="data_nas">Data de nascimento:
+                        <input type="date" name="data_nas">
+                    </label><br><br>
+                    <label for="avaliacao">Avaliação: <br>
+                        <input type="radio" name="avaliacao" value="1">1 estrela<br>
+                        <input type="radio" name="avaliacao" value="2">2 estrelas<br>
+                        <input type="radio" name="avaliacao" value="3">3 estrelas<br>
+                        <input type="radio" name="avaliacao" value="4">4 estrelas<br>
+                        <input type="radio" name="avaliacao" value="5">5 estrelas<br>
+                    </label><br><br>
+                    <label for="assunto"> Assunto:
+                        <select name="assunto">
+                            <option value="sugestoes">Sugestões</option>
+                            <option value="reclamacoes">Reclamações</option>
+                            <option value="pedidos">Pedidos</option>
+                            <option value="encomendas">Encomendas</option>
+                        </select>
+                    </label><br><br>
+                    <label for="sobre">Sobre:
+                        <textarea name="sobre" cols="80" rows="4" required maxlenght="90"></textarea>
+                    </label><br><br>
+                    <input type="submit" class="button" value="Enviar">
+                    <input type="submit" class="button" value="Cancelar">
+                </form>
+
+                <label><br><br>
+
+                </label>
+            </section>
+        </article>
+    </main>
+    <aside>
+        <img src="images/mapa.png" alt="mapa de Portugal" usemap="#image-map">
+        <map name="image-map">
+            <area target="_self" alt="turismo no norte" title="turismo no norte" href="norte.html"
+                coords="47, 28, 151, 142">
+            <area target="_self" alt="turismo no centro" title="turismo no centro" href="centro.html"
+                coords="46, 145, 142, 251">
+            <area target="_self" alt="turismo no sul" title="turismo no sul" href="sul.html" coords="22, 270, 133, 374">
+        </map>
+    </aside>
+    <!-- Rodapé da Página -->
+    <footer>
+        <p>© 2026 Turismo em Portugal. Todos os direitos reservados. CN @ IEFP</p>
+    </footer>
+</body>
+
+</html>

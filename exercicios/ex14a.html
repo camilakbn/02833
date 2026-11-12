@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 14A - CN</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        main {
+            width: 650px;
+            margin: auto;
+        }
+
+        .formulario {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .linha {
+            display: flex;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .esq {
+            width: 90px;
+            padding: 5px;
+            border-right: 1px solid #ccc;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .dir {
+            flex: 1;
+            padding: 5px;
+            text-align: left;
+        }
+
+        .caixa {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Comentários</h1>
+    </header>
+    <br>
+    <main>
+        <form action="mailto:camilakarinab@gmail.com" class="formulario">
+            <div class="linha">
+                <div class="esq">
+                    <label for="nome" class="campo">Nome:</label>
+                </div>
+                <div class="dir">
+                    <input class="caixa" type="text" name="nome" size="60" required maxlength="100"
+                        placeholder="Coloque o nome aqui">
+                </div><br>
+            </div>
+            <div class="linha">
+                <div class="esq">
+                    <label for="email" class="campo">Email:</label>
+                </div>
+                <div class="dir">
+                    <input class="caixa" type="email" name="email" size="40" required maxlength="40"
+                        placeholder="nome@dominio.pt">
+                </div><br>
+            </div>
+            <div class="linha">
+                <div class="esq">
+                    <label for="assunto" class="campo"> Assunto:</label>
+                </div>
+                <div class="dir">
+                    <select name="assunto">
+                        <option value="sugestoes">Sugestões</option>
+                        <option value="reclamacoes">Reclamações</option>
+                        <option value="pedidos">Pedidos</option>
+                        <option value="encomendas">Encomendas</option>
+                    </select>
+                </div><br>
+            </div>
+            <div class="linha">
+                <div class="esq">
+                    <label for="msg" class="campo">Mensagem:</label>
+                </div>
+                <div class="dir">
+                    <textarea name="mensagem" cols="80" rows="4" required maxlength="90"></textarea>
+                </div><br>
+            </div>
+            <div class="linha">
+                <div class="esq">
+                    <label for="senha" class="campo">Senha:
+                </div>
+                <div class="dir">
+                    <input class="caixa" type="password" name="senha" size="20" required maxlength="20">
+                </div>
+            </div><br>
+            <input type="submit" class="button" value="OK">
+            <input type="submit" class="button" value="Limpar">
+        </form>
+        <article>
+            <section>
+            </section>
+        </article>
+        </div>
+    </main>
+    <footer>
+        <p>2026 Demi Forms. Todos os direitos reservados CN @ IEFP VN Gaia</p>
+    </footer>
+</body>
+
+</html>
